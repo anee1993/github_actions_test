@@ -1,11 +1,14 @@
 var http = require("http")
 
-http.createServer(function (request, response) {
+var express = require("express")
+const { response } = require("express")
 
-    response.writeHead(200, {'Content-Type' : 'text/plain'});
+const app = express()
 
-    response.end('Hello World\n');
+app.listen(8082)
 
-}).listen(8081)
+app.use("/", (request, response) => {
+    response.send("Hello world!")
+})
 
-console.log('Server running at http://127.0.0.1:8081/');
+console.log('Server running at http://127.0.0.1:8082/');
