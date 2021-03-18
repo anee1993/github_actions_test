@@ -4,7 +4,9 @@
   "description": "a node js project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "create-serverless": "serverless",
+    "deploy": "serverless deploy"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   "homepage": "https://github.com/anee1993/github_actions_test#readme",
   "dependencies": {
     "aws-sdk": "^2.866.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "serverless": "^2.30.3"
   }
 }
