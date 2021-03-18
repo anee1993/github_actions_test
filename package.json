@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/anee1993/github_actions_test#readme",
   "dependencies": {
+    "aws-sdk": "^2.866.0",
     "express": "^4.17.1"
   }
 }
